@@ -1,7 +1,7 @@
 <script setup>
 
   function yes() { 
-    const otevet = prompt("5 мнут тебе даю понял?", ' ')
+    const otevet = prompt("5 мнут тебе даю понял?", '')
 
     if (otevet !== 'да' && otevet !== 'yes' && otevet !== 'Да') { 
       alert('не ты вообще прихуеваший')

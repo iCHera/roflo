@@ -1,9 +1,10 @@
 <script setup>
 
   function yes() { 
-    const otevet = prompt("5 мнут тебе даю понял?", '')
+    const otevet1 = prompt("5 мнут тебе даю понял?", '')
+    const otevet = otevet1.trim().toLocaleLowerCase()
 
-    if (otevet !== 'да' && otevet !== 'yes' && otevet !== 'Да') { 
+    if (otevet !== 'да' && otevet !== 'yes') { 
       alert('не ты вообще прихуеваший')
       return 
     }
@@ -15,8 +16,9 @@
   }
 
   function no () { 
-    alert ("ахуел, давно не пиздили?")
-    return 
+    while(true) { 
+      alert ("ахуел, давно не пиздили?")
+    }
   }
 
 </script>

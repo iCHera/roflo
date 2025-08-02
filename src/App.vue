@@ -2,12 +2,19 @@
 
   function yes() { 
     const otevet1 = prompt("5 мнут тебе даю понял?", '')
+    
+    if(otevet1 === null) { 
+      alert('вообще ахуел нажимать отмена, думаешь самый умный?)')
+      return
+    }
+
     const otevet = otevet1.trim().toLocaleLowerCase()
 
     if (otevet !== 'да' && otevet !== 'yes') { 
       alert('не ты вообще прихуеваший')
       return 
     }
+
     else { 
       alert('молодец')
     }
